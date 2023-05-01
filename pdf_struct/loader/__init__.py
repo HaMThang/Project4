@@ -7,5 +7,5 @@ modules = {
     'hocr': hocr,
     'pdf': pdf,
     'text': text,
-    'doc':doc
+    'docx':doc
 }

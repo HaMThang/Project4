@@ -34,6 +34,7 @@ def export_result(cells: List[Document], out_dir: str):
     except OSError:
         pass
     documents = defaultdict(list)
+    print(cells)
     for cell in cells:
         documents[cell.path].append(cell)
     for path, document_cells in documents.items():

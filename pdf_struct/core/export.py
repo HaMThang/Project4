@@ -56,8 +56,8 @@ def to_paragraphs(document: Document, insert_space=True):
         levels.append(level)
     assert len(levels) == len(document.labels)
     assert len(paragraphs) == len(paragraph_levels)
-    return list(zip(paragraphs, paragraph_levels))
-
+    #return list(zip(paragraphs, paragraph_levels))
+    return paragraphs
 
 def get_birelationship(hierarchy_matrix, target: int, relation: int) -> List[int]:
     assert relation in [0, 1]
